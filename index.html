@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<form id="form">
+			<input type="tel" id="tel">
+			<input type="submit">
+		</form>
+
+		<script>
+			let form = document.getElementById("form");
+			let input = document.getElementById("tel");
+
+			form.addEventListener("submit", (event) => {
+				event.preventDefault();
+				console.log(tel.value);
+				window.open(`https://wa.me/${input.value}`, "_self")
+			});
+		</script>
+	</body>
+</html>
