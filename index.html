@@ -1,5 +1,8 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 		<style>
 			.center {
 				display: flex;
@@ -8,16 +11,21 @@
 				height: 200px;
 			}
 
-			input {
+			input, button {
 				height: 8vh;
 				font-size: 4vh;
+			}
+			button {
+				padding: 1vh;
+				background-color: green;
+				color: white;
 			}
 		</style>
 	</head>
 	<body>
 		<form id="form" class="center">
 			<input type="tel" id="tel" placeholder="Phone">
-			<input type="submit" value="Open WhatsApp">
+			<button type="submit"><i class="fa fa-whatsapp"></i></button>
 		</form>
 
 		<script>
@@ -26,7 +34,6 @@
 
 			form.addEventListener("submit", (event) => {
 				event.preventDefault();
-				console.log(tel.value);
 				window.open(`https://wa.me/${input.value}`, "_self")
 			});
 		</script>
