@@ -1,8 +1,23 @@
 <html>
+	<head>
+		<style>
+			.center {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 200px;
+			}
+
+			input {
+				height: 8vh;
+				font-size: 4vh;
+			}
+		</style>
+	</head>
 	<body>
-		<form id="form">
-			<input type="tel" id="tel">
-			<input type="submit">
+		<form id="form" class="center">
+			<input type="tel" id="tel" placeholder="Phone">
+			<input type="submit" value="Open WhatsApp">
 		</form>
 
 		<script>
